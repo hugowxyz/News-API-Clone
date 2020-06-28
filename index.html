@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Learning Bootstrap4!</title>
+  </head>
+  <body>
+    
+    <header class="bd-header">
+      <div class="bd-navbar">
+        <div class="nav-logo">
+          <a href="#">News API</a>
+        </div>
+        <ul class="bd-nav">
+          <li class="d-none d-md-block list-item"><a href="#" class="list-link">Get Started</a></li>
+          <li class="d-none d-md-block list-item"><a href="#" class="list-link">Documentation</a></li>
+          <li class="d-none d-md-block list-item"><a href="#" class="list-link">News Sources</a></li>
+          <li class="d-none d-md-block list-item"><a href="#" class="list-link">Pricing</a></li>
+          <li class="list-item">
+            <a href="#" class="special-link">phanhuyhugo@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <nav class="bd-sidenav">
+        <ul>
+          <li><a href="#">Get started</a></li>
+          <li><a href="#">Migration to v2</a></li>
+          <li class="divider"></li>
+          <li>
+            <a href="#" class="active">Documentation</a>
+            <ul>
+              <li><a href="#">Authorization</a></li>
+              <li>
+                <a href="#">Endpoints</a>
+                <ul>
+                  <li><a href="#">Top Headlines</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Authorization</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+      <main class="content">
+        <button class="toggle-nav-btn">
+          &raquo;
+        </button>
+        <article class="main-article">
+          <h1>Documentation</h1>
+          <p>News API is a simple HTTP REST API for searching and retrieving live articles from all over the web. It can help you answer questions like:</p>
+          <ul>
+            <li>What top stories is the NY Times running right now?</li>
+            <li>What new articles were published about the next iPhone today?</li>
+            <li>Has my company or product been mentioned or reviewed by any blogs recently</li>
+          </ul>
+          <p>You can search for articles with any combination of the following criteria:</p>
+          <ul>
+            <li><strong>Keyword or phrase.</strong>Eg: find all articles containing the word 'Microsoft'.</li>
+            <li><strong>Date published</strong>Eg: find all articles published yesterday</li>
+            <li><strong>Source name.</strong>Eg: find all articles by 'TechCrunch'.</li>
+            <li><strong>Source domain name</strong>Eg: find all articles published on nytimes.com.</li>
+            <li><strong>Language</strong> Eg: find all articles written in English.</li>
+          </ul>
+          <p>You can sort the results in the following orders:</p>
+          <ul>
+            <li>Date published</li>
+            <li>Relevancy to search keyword</li>
+            <li>Popularity of source</li>
+          </ul>
+          <p>You need an API key to use the API - this is a unique key that identifies your requests. They're free for development, open-source, and non-commercial use. You can get one here: get   <a href="#">API key.</a></p>
+          <div class="alert alert-primary">
+            If you are logged in you will see your live API key in all the examples.
+          </div>
+          <hr style="margin: 40px 0;">
+          <div>
+            <a href="#" style="float: right;">Authentication &raquo;</a>
+            <div style="clear: both;"></div>
+          </div>
+        </article>
+
+        <footer style="background: #3A454E;">
+          <p class="footer-p">Need to talk to someone? <a href="#" class="footer-link">Email us</a> or <a href="#" class="footer-link">send us a tweet</a>.</p>
+          <div class="footer-div">
+            <div class="third">
+              <h6 class="ttu f6 mb2">News API</h6>
+              <div class="mv3 w60">Get started</div>
+              <div class="mv3 w60">Documentation</div>
+              <div class="mv3 w60">News sources</div>
+              <div class="mv3 w60">Pricing</div>
+              <div class="mv3 w60">Google News API</div>
+            </div>
+            <div class="third">
+              <h6 class="ttu f6 mb2">Company</h6>
+              <div class="mv3 w60">Privacy policy</div>
+              <div class="mv3 w60">Terms of service</div>
+            </div>
+            <div class="third tr">
+              <h6 class="ttu f6 mb2">News API</h6>
+              <div class="mv3 w60">Contact</div>
+              <div class="mv3 w60">Twitter</div>
+              <div class="mv3 w60">&nbsp;</div>
+              <div class="mv3 w60">Github</div>
+            </div>
+          </div>
+          <div>
+            <p style="padding: 1rem 0; margin: 0;"></p>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+      const btn = document.querySelector('.toggle-nav-btn')
+      btn.addEventListener('click', () => {
+        document.querySelector('.content').classList.toggle('nav-open')
+      })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
